@@ -78,6 +78,9 @@
     transition:.3s;
   }
 
+   nav ul li a{text-decoration: none;
+               color: #d2d4d6;}
+
   nav ul li::after{
     content:'';
     position:absolute;
@@ -173,10 +176,14 @@
     font-weight:500;
   }
 
-  .btn-purple{
+  .btn-purple a{
     background:#9b59ff;
     color:white;
   }
+
+  .btn-purple a{text-decoration: none;}
+  .btn-dark a{text-decoration: none;
+               color: #dfe1e3;}
 
   .btn-purple:hover{
     transform:translateY(-5px);
@@ -190,8 +197,10 @@
   }
 
   .btn-dark:hover{
-    background:white;
+    background:#9b59ff;
     color:black;
+    border:1px solid #9b59ff;
+    box-shadow:0 0 25px #9b59ff;
     transform:translateY(-5px);
   }
 
@@ -258,6 +267,8 @@
       color:#9b59ff;
       cursor:pointer;
     }
+
+     .edit-about a{text-decoration: none;}
 
   .about{
     margin-top:80px;
@@ -681,6 +692,9 @@
       gap:20px;
     }
 
+    .social-icons a{text-decoration: none;
+                    color: #f4f5f5;}
+
     .social-icons i{
       width:50px;
       height:50px;
@@ -707,8 +721,6 @@
     }
 
     .image-box{
-      width:420px;
-      height:420px;
       border-radius:50%;
       overflow:hidden;
       border:6px solid #9b59ff;
@@ -878,8 +890,14 @@
         text-align:center;
       }
 
+      .hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 40px;}
+
       .hero-left h1{
-        font-size:55px;
+        font-size:50px;
       }
 
       .hero-left h2{
@@ -899,7 +917,7 @@
         gap:20px;
       }
 
-      nav ul{
+      nav ul{gap: 14px;
         flex-wrap:wrap;
         justify-content:center;
       }
