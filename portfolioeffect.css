@@ -542,7 +542,7 @@ nav ul li:hover::after {
     object-position: center;
 }
 
-.project-content {
+.project-content {background-color: #f3f3f3;
     padding: 22px;
 }
 
